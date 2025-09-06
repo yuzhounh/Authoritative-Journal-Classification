@@ -151,11 +151,9 @@ Authoritative-Journal-Classification/
 
 如有问题或建议，请通过 GitHub Issues 联系我们。
 
----
-
 ## 开发记录
 
-### 2025年1月 - README文档创建与更新
+### 2025年9月 - README文档创建与更新
 - **会话目的**：为权威期刊分类项目创建GitHub发布用的README文档
 - **完成任务**：
   - 分析了项目的核心功能和数据结构
@@ -174,4 +172,4 @@ Authoritative-Journal-Classification/
   - 准确描述了影响因子和权威期刊列的插入位置
   - 简化项目结构，专注于核心的期刊分级功能
 
-*最后更新：2025年1月*
+*最后更新：2025年9月6日*
