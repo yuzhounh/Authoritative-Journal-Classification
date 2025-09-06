@@ -133,17 +133,20 @@ def main():
         
         # 在Top列和小类1列之间插入权威期刊列
         cols = discipline_df.columns.tolist()
+        
+        # 先移除权威期刊列（如果存在）
+        if '权威期刊' in cols:
+            cols.remove('权威期刊')
+        
+        # 找到Top列和小类1列的位置
         top_index = cols.index('Top')
         xiaolei1_index = cols.index('小类1')
         
-        # 重新排列列顺序
-        new_cols = cols[:top_index+1] + ['权威期刊'] + cols[xiaolei1_index:]
-        # 移除原来的权威期刊列位置
-        if '权威期刊' in new_cols[:-1]:  # 避免重复
-            authority_old_index = new_cols[:-1].index('权威期刊')
-            new_cols.pop(authority_old_index)
+        # 在Top列后插入权威期刊列
+        cols.insert(top_index + 1, '权威期刊')
         
-        discipline_df = discipline_df[new_cols]
+        # 重新排列DataFrame列顺序
+        discipline_df = discipline_df[cols]
         
         # 按排名排序（NaN值放在最后）
         discipline_df_sorted = discipline_df.sort_values('排名', na_position='last')
