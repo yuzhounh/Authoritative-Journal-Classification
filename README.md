@@ -109,10 +109,10 @@ Authoritative-Journal-Classification/
 ├── authoritative_journal_classification.py  # 主程序文件
 ├── README.md                                # 项目说明文档
 ├── reports.txt                              # 运行报告
-├── FQBJCR2025-UTF8.csv                     # 中科院JCR分区表2025年版
-├── JCR2024-UTF8.csv                        # JCR 2024年影响因子数据
-├── FQBJCR2025-QWQKFJ-UTF8.csv             # 输出：完整权威期刊表
-└── Disciplines/                            # 输出：分学科期刊文件
+├── FQBJCR2025-UTF8.csv                      # 中科院JCR分区表2025年版
+├── JCR2024-UTF8.csv                         # JCR 2024年影响因子数据
+├── FQBJCR2025-QWQKFJ-UTF8.csv               # 输出：完整权威期刊表
+└── Disciplines/                             # 输出：分学科期刊文件
     ├── FQBJCR2025-医学-UTF8.csv
     ├── FQBJCR2025-计算机科学-UTF8.csv
     └── ... (其他19个学科文件)
