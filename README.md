@@ -1,5 +1,7 @@
 # 权威期刊分类系统 (Authoritative Journal Classification)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-D4A017.svg)](LICENSE)
+
 ## 项目简介
 
 本项目是一个基于Python的权威期刊分类系统，基于中科院JCR分区表和JCR影响因子数据，自动计算权威期刊三级分类，并生成分学科的期刊分类报告。
@@ -85,9 +87,15 @@
 ## 使用方法
 
 ### 运行程序
+
 ```bash
+git clone https://github.com/yuzhounh/Authoritative-Journal-Classification.git
+cd Authoritative-Journal-Classification
+python -m pip install pandas numpy
 python authoritative_journal_classification.py
 ```
+
+程序会覆盖仓库中的汇总 CSV、`Disciplines/` 分类文件和运行报告；运行前请先保存需要保留的本地结果。
 
 ### 输出结果
 程序运行后将生成：
@@ -151,25 +159,7 @@ Authoritative-Journal-Classification/
 
 如有问题或建议，请通过 GitHub Issues 联系我们。
 
-## 开发记录
+## 相关项目
 
-### 2025年9月 - README文档创建与更新
-- **会话目的**：为权威期刊分类项目创建GitHub发布用的README文档
-- **完成任务**：
-  - 分析了项目的核心功能和数据结构
-  - 编写了详细的项目介绍和使用说明
-  - 整理了21个学科的期刊统计数据
-  - 说明了基于中科院JCR分区的权威期刊三级分类算法
-  - 提供了完整的项目结构和使用指南
-  - 更新了数据来源说明，指向hitfyd/ShowJCR项目
-  - 详细说明了中科院JCR分区表的数据格式和处理流程
-  - 清理项目文件，删除了CCF和期刊预警名单相关文件
-- **关键决策**：
-  - 明确标识FQBJCR2025-UTF8.csv为中科院JCR分区表而非复旦版
-  - 详细说明了权威期刊分级的具体规则和计算方法
-  - 增加了数据来源的GitHub项目链接
-  - 提供了程序运行输出的具体格式示例
-  - 准确描述了影响因子和权威期刊列的插入位置
-  - 简化项目结构，专注于核心的期刊分级功能
-
-*最后更新：2025年9月6日*
+- [academic-journal-index](https://github.com/yuzhounh/academic-journal-index)：使用本项目的权威等级结果构建期刊检索应用。
+- [aji-editions](https://github.com/yuzhounh/aji-editions)：跨版本比较中科院/XR 分区与 JCR 影响因子。
